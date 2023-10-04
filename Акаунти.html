@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="uk" class="smallTop">
+<head>
+	<title>Акаунти</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=800, initial-scale=0.5">
+	<meta property="og:title" content="Акаунти">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.zzz.com.ua/uk">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://www.zzz.com.ua/img/logo_zzz_fb.png">
+	<meta property="og:image:alt" content="zzz">
+	<meta property="fb:app_id" content="{fbAppId}">
+	<link rel="stylesheet" type="text/css" href="/css/jquery-ui.css?v=3.2.8.99">
+	<link rel="stylesheet" type="text/css" href="/css/jqplot.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/intlTelInput.css">
+	<link rel="stylesheet" type="text/css" href="/css/flags.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/common.css?v=3.2.8.99">
+	<link rel="stylesheet" type="text/css" href="/css/fontello.css?v=3.2.8.99">
+	<link rel="stylesheet" type="text/css" href="/css/countrySelect.min.css">
+	
+	
+	
+
+	
+	<link rel="stylesheet" type="text/css" href="/css/panel.css?v=3.2.8.99">
+		
+	
+
+	
+
+	<link rel="icon" type="image/png" href="/img/favicon.png">
+	<style>
+		#top h3.logo
+		{
+			background-image: url(/img/logo_zzz.png);
+		}
+	</style>
+	
+	<script type="text/javascript" >
+		var webpage = {
+			currency: 'грн',
+			language: 'uk',
+			page: 'accounts'
+		}
+
+		var isLoggedIn = false;
+		isLoggedIn = true;
+		
+		
+	</script>
+	<script type="text/javascript" src="/scripts/jed.min.js"></script>
+	<script type="text/javascript" src="/scripts/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript" src="/scripts/common.js?v=3.2.8.99"></script>
+	<script type="text/javascript" src="/scripts/velocity.min.js"></script>
+	<script type="text/javascript" src="/scripts/jquery.tablesorter.min.js"></script>
+	<script type="text/javascript" src="/scripts/jquery-ui-1.13.2.min.js"></script>
+	<script type="text/javascript" src="/scripts/jquery.ui.labeledslider.min.js"></script>
+	<script type="text/javascript" src="/scripts/jqplot.min.js?v=3.2.8.99"></script>
+	<script type="text/javascript" src="/scripts/jquery.selectric.min.js"></script>
+	<script type="text/javascript" src="/scripts/panel.js?v=3.2.8.99"></script>
+	<script type="text/javascript" src="/scripts/countrySelect.min.js"></script>
+	<script type="text/javascript" src="/scripts/intlTelInput.min.js"></script>
+	<script type="text/javascript" src="/scripts/punycode.min.js"></script>
+	
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-2289508-6', 'auto');
+		ga('send', 'pageview');
+
+		var gaq = ga.q;
+		setTimeout(function () {
+			gaq.push(['_trackEvent', 'NoBounce', 'Over 10 seconds']);
+		}, 10000);
+
+		$(document).ready(function()
+		{
+			if (3 == 1)
+			{
+				$('#languageindicator').addClass('rounded-corner');
+			}
+		});
+	</script>
+	
+</head>
+<body id="page_accounts" >
+	
+<div id="wrapper">
+	<div>
+		
+		<div class="collapsible_cart">
+			<div class="collapsible_cart_header">
+				<label class="title_header"> Ваші елементи </label>
+				<button class="close_header"> X </button>
+			</div>
+			<div class="collapsible_cart_body">
+				<div class="product_list"><div><div class="generic_product">0 позицій додано</div></div></div><div class="subtotal"><span class="subtotal_title">Всього</span><span class="subtotal_amount">0,00 грн</span></div>
+			</div>
+			<a href="/panel/uk/cart" class="go_cart" >Перейти до кошика</a>
+		</div>
+		
+		<div id="topmovie"></div>
+		<div id="top">
+			<div>
+				<div id="top_header">
+					<div class="top_controls_container">
+						
+						<a href="/panel/uk/logout" class="link_logout">
+							Вийти
+							[sekasu]
+						</a>
+						<a href="/panel/uk/profile" class="link_profile">
+							Профіль
+						</a>
+						<div id="languageindicator" class="dropdown_switcher language_switcher">
+							<span class="flag flag-ua"></span>
+							uk
+							<ul><li><a class="language_switcher_entry" href="/panel/ru/accounts"><span class="flag flag-ru"></span>ru</a></li><li><a class="language_switcher_entry" href="/panel/en/accounts"><span class="flag flag-gb"></span>en</a></li></ul>
+						</div>
+						<a href="/panel/uk/cart" class="link_cart" id="cart_list">
+							Кошик
+							<span id="cart_items_count"></span>
+						</a>
+						
+					</div>
+					<h3 class="logo logo-panel logo-zzz"><a href="/uk">Hosting ZZZ.com.ua</a></h3>
+				</div>
+				<div id="navigation_pane">
+					<ul>
+						
+						<li>
+							<a href="/uk">
+								Головна
+							</a>
+						</li>
+						
+						
+						<li>
+							<a href="/uk/propozytsiya/hosting">
+								Хостинг
+							</a>
+						</li>
+						
+						
+						<li>
+							<a href="/uk/propozytsiya/domeny">
+								Домени
+							</a>
+						</li>
+						
+						
+						<li>
+							<a href="/uk/propozytsiya/vps">
+								Сервери VPS
+							</a>
+						</li>
+						
+						<!--start:isMenuDedicatedAllowed-->
+						<li>
+							<a href="/uk/propozytsiya/vydilenij-server">
+								Вид. сервери
+							</a>
+						</li>
+						<!--end:isMenuDedicatedAllowed-->
+						
+						<li>
+							<a href="/uk/propozytsiya/websayty">
+								Веб-сайти
+							</a>
+						</li>
+						
+						
+						<li>
+							<a href="/uk/blog">
+								Блог
+							</a>
+						</li>
+						
+						
+						<li>
+							<a href="/uk/kontakt" onClick="gotoContact($(this)); return false;">
+								Контакт
+							</a>
+						</li>
+						
+					</ul>
+					<div id="navigation_buttons_container">
+						<a href="/panel/uk/index" rel="nofollow" title="Панель">
+							<span class="menu_panel"></span>
+							Панель
+						</a>
+						<a href="/uk/rcmlogin" rel="nofollow" title="Пошта">
+							<span class="menu_email"></span>
+							Пошта
+						</a>
+						<a href="/uk/ftplogin" rel="nofollow" title="FTP">
+							<span class="menu_ftp"></span>
+							FTP
+						</a>
+						<a href="/uk/loginmysql" rel="nofollow" title="MySQL">
+							<span class="menu_database"></span>
+							MySQL
+						</a>
+						<a href="/forum" title="Форум">
+							<span class="menu_forum"></span>
+							Форум
+						</a>
+						<a href="/uk/help" title="Допомога">
+							<span class="menu_help"></span>
+							Допомога
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<h1>Панель</h1>
+			
+			
+		</div>
+		<div id="content">
+			<div>
+				
+				
+				
+				<!-- The Modal -->
+				<ul id="sidebar">
+					<li class="link_summary">
+						<a href="/panel/uk/summary">
+							Огляд
+						</a>
+					</li>
+					<li class="link_accounts link_active">
+						<a href="/panel/uk/accounts">
+							Хостингові акаунти
+						</a>
+					</li>
+					
+					<li class="link_vps">
+						<a href="/panel/uk/vps">
+							Сервери VPS
+						</a>
+					</li>
+					<li class="link_dedicatedserver">
+						<a href="/panel/uk/dedicated-server">
+							Виділені сервери
+						</a>
+					</li>
+					
+					<li class="link_domains">
+						<a href="/panel/uk/domains">
+							Домени
+						</a>
+					</li>
+					<li class="link_ftp">
+						<a href="/panel/uk/ftp">
+							Акаунти FTP
+						</a>
+					</li>
+					<li class="link_email">
+						<a href="/panel/uk/email">
+							Електронні пошти
+						</a>
+					</li>
+					<li class="link_databases">
+						<a href="/panel/uk/databases">
+							Бази даних
+						</a>
+					</li>
+					<li class="link_cronjobs">
+						<a href="/panel/uk/cron-jobs">
+							Сron-завдання
+						</a>
+					</li>
+					<li class="link_software">
+						<a href="/panel/uk/software">
+							Програми
+						</a>
+					</li>
+					<li class="link_protected">
+						<a href="/panel/uk/protected">
+							Захищені розділи
+						</a>
+					</li>
+					<li class="link_statistics">
+						<a href="/panel/uk/statistics">
+							Статистика
+						</a>
+					</li>
+					
+					<li class="link_payments">
+						<a href="/panel/uk/payments">
+							Платежі
+						</a>
+					</li>
+					
+					<li class="link_support">
+						<a href="/panel/uk/support">
+							Підтримка
+						</a>
+					</li>
+					
+					<li class="link_profile">
+						<a href="/panel/uk/profile">
+							Профіль
+						</a>
+					</li>
+				</ul>
+				<!-- Modal content -->
+				
+				
+				
+				
+				<div id="panel_content">
+				
+				<div id="messages"><div class="message message_warning">Термін дії безкоштовного пакету послуг для акаунту <strong>FREE #1</strong> закінчується 2023-10-11 12:15:45. <a href="/panel/uk/accounts/item/FREE1/action/upgrade-account"> Перейдіть </a> на платний пакет послуг, щоб відкрити для себе всі можливості хостингу!</div><div class="message message_information">Ви повинні заповнити <a href="/panel/uk/profile">профіль</a> перед оплатою послуг.</div></div>
+				<div id="dialogs_container">
+<form action="/panel/uk/accounts" method="post" id="dialog_add_account" class="dialog">
+<h3>Додати хостинговий акаунт</h3>
+<div class="important">Виберіть пакет послуг (<a href="/uk/propozytsiya/hosting" target="_blank">порівняти пропозиції</a>):</div>
+<div class="hosting">
+    
+
+<span id="span_plan_free">
+<input type="radio" name="accounts_plan" value="free" id="plan_free" >
+<label for="plan_free">Free</label>
+</span>
+
+    
+<input type="radio" name="accounts_plan" value="pro" id="plan_pro" autofocus>
+<label for="plan_pro">Pro</label>
+<input type="radio" name="accounts_plan" value="vip" id="plan_vip">
+<label for="plan_vip">VIP</label>
+</div>
+<div class="hosting_period">
+<div class="important">Термін дії пакету послуг:</div>
+<div class="slider"></div>
+<select name="accounts_buyplan">
+<option value="">Обрати значення платежу</option>
+<optgroup label="Пакет послуг Pro" data-group="pro"><option value="hostingAccounts-plans-pro-quarter" data-duration="3 місяці" data-transfer="-3" data-price="99.99">3 місяці, безлімітна передача даних - 99,99 грн</option><option value="hostingAccounts-plans-pro-year" data-duration="12 місяців" data-transfer="-12" data-price="99.99">12 місяців, безлімітна передача даних - 99,99 грн</option><option value="hostingAccounts-plans-pro-twoYears" data-duration="24 місяці" data-transfer="-24" data-price="699.90">24 місяці, безлімітна передача даних - 699,90 грн</option><option value="hostingAccounts-plans-pro-threeYears" data-duration="36 місяців" data-transfer="-36" data-price="1359.90">36 місяців, безлімітна передача даних - 1 359,90 грн</option></optgroup><optgroup label="Пакет послуг VIP" data-group="vip"><option value="hostingAccounts-plans-vip-year" data-duration="12 місяців" data-transfer="-12" data-price="659.00">12 місяців, безлімітна передача даних - 659,00 грн</option><option value="hostingAccounts-plans-vip-twoYears" data-duration="24 місяці" data-transfer="-24" data-price="2399.00">24 місяці, безлімітна передача даних - 2 399,00 грн</option><option value="hostingAccounts-plans-vip-threeYears" data-duration="36 місяців" data-transfer="-36" data-price="3999.00">36 місяців, безлімітна передача даних - 3 999,00 грн</option><option value="hostingAccounts-plans-vip-fiveYears" data-duration="60 місяців" data-transfer="-60" data-price="6599.00">60 місяців, безлімітна передача даних - 6 599,00 грн</option></optgroup><optgroup label="Пакет послуг Price on other hostings in compare table" data-group="otherHosting"><option value="hostingAccounts-plans-otherHosting-hosting" data-duration="0 місяців" data-transfer="0" data-price="0.00">0 місяців, 0 ГБ передачі даних - 0,00 грн</option><option value="hostingAccounts-plans-otherHosting-vps" data-duration="0 місяців" data-transfer="0" data-price="0.00">0 місяців, 0 ГБ передачі даних - 0,00 грн</option><option value="hostingAccounts-plans-otherHosting-managedVps" data-duration="0 місяців" data-transfer="0" data-price="0.00">0 місяців, 0 ГБ передачі даних - 0,00 грн</option></optgroup><optgroup label="Пакет послуг Basic" data-group="basic"></optgroup></select>
+</div>
+<div class="important">
+<p>
+<span class="price_hosting">безкоштовно</span>
+Ціна хостингу:
+</p>
+<div class="payment">
+<p class="coupon">
+<label>
+Код купону <strong class="icon-question-circle-o" title="Якщо у вас немає коду купону на знижку, не заповнюйте це поле. Щоб отримати його, слідкуйте за нами у Facebook - кілька разів на рік ми робимо акції, не пропустіть їх!"></strong>:
+</label>
+<span id="error_coupon" class="error" style="display:none;"><span>{error_coupon}</span></span>
+<span>
+<input type="text" name="accounts_coupon" autocomplete="off">
+<button>Використати</button>
+<strong data-discount=""></strong>
+</span>
+</p>
+<p>
+<span><strong class="price_total">не застосовується</strong></span>
+Повна ціна:
+</p>
+
+</div>
+</div>
+<div class="buttons">
+<input type="hidden" name="accounts_confirm" value="8ae62ec2fd19113c7328527b63b83bf0">
+<input type="submit" value="Додати в кошик">
+<a href="/panel/uk/accounts" class="button cancel_button">Скасувати</a>
+</div>
+</form>
+<form action="/panel/uk/accounts" method="post" id="dialog_upgrade_account" class="dialog">
+<h3>Покращити акаунт: </h3>
+<div id="upgrading-free-message" style="display:none" class="message message_information">
+Ви змінюєте пакет послуг вашого FREE #1 акаунту.
+</div>
+<div id="upgrading-pro-message" class="message message_information">
+Оновивши тарифний план до PRO, ви погоджуєтеся скоротити його тривалість, щоб тривалість відповідала ціні.
+</div>
+<div class="important">Виберіть пакет послуг (<a href="/uk/propozytsiya/hosting" target="_blank">порівняти пропозиції</a>):</div>
+<div class="hosting">
+<span id="span_plan_pro_upgrade">
+<input type="radio" name="accounts_plan" value="pro" id="plan_pro_upgrade">
+<label for="plan_pro_upgrade">Pro</label>
+</span>
+<input type="radio" name="accounts_plan" value="vip" id="plan_vip_upgrade" autofocus checked="1">
+<label for="plan_vip_upgrade">VIP</label>
+</div>
+<div class="hosting_period">
+<div class="important">Термін дії пакету послуг:</div>
+<div class="slider"></div>
+<select name="accounts_buyplan"><option value="">Обрати значення платежу</option>
+<optgroup label="Пакет послуг Pro" data-group="pro"><option value="hostingAccounts-plans-pro-quarter" data-duration="3 місяці" data-transfer="-3" data-price="99.99">3 місяці, безлімітна передача даних - 99,99 грн</option><option value="hostingAccounts-plans-pro-year" data-duration="12 місяців" data-transfer="-12" data-price="99.99">12 місяців, безлімітна передача даних - 99,99 грн</option><option value="hostingAccounts-plans-pro-twoYears" data-duration="24 місяці" data-transfer="-24" data-price="699.90">24 місяці, безлімітна передача даних - 699,90 грн</option><option value="hostingAccounts-plans-pro-threeYears" data-duration="36 місяців" data-transfer="-36" data-price="1359.90">36 місяців, безлімітна передача даних - 1 359,90 грн</option></optgroup><optgroup label="Пакет послуг VIP" data-group="vip"><option value="hostingAccounts-plans-vip-year" data-duration="12 місяців" data-transfer="-12" data-price="659.00">12 місяців, безлімітна передача даних - 659,00 грн</option><option value="hostingAccounts-plans-vip-twoYears" data-duration="24 місяці" data-transfer="-24" data-price="2399.00">24 місяці, безлімітна передача даних - 2 399,00 грн</option><option value="hostingAccounts-plans-vip-threeYears" data-duration="36 місяців" data-transfer="-36" data-price="3999.00">36 місяців, безлімітна передача даних - 3 999,00 грн</option><option value="hostingAccounts-plans-vip-fiveYears" data-duration="60 місяців" data-transfer="-60" data-price="6599.00">60 місяців, безлімітна передача даних - 6 599,00 грн</option></optgroup><optgroup label="Пакет послуг Price on other hostings in compare table" data-group="otherHosting"><option value="hostingAccounts-plans-otherHosting-hosting" data-duration="0 місяців" data-transfer="0" data-price="0.00">0 місяців, 0 ГБ передачі даних - 0,00 грн</option><option value="hostingAccounts-plans-otherHosting-vps" data-duration="0 місяців" data-transfer="0" data-price="0.00">0 місяців, 0 ГБ передачі даних - 0,00 грн</option><option value="hostingAccounts-plans-otherHosting-managedVps" data-duration="0 місяців" data-transfer="0" data-price="0.00">0 місяців, 0 ГБ передачі даних - 0,00 грн</option></optgroup><optgroup label="Пакет послуг Basic" data-group="basic"></optgroup></select>
+</div>
+<div class="important">
+<p>
+<span class="price_hosting">безкоштовно</span>
+Ціна хостингу:
+</p>
+<div class="payment">
+<p class="coupon">
+<label>
+Код купону <strong class="icon-question-circle-o" title="Якщо у вас немає коду купону на знижку, не заповнюйте це поле. Щоб отримати його, слідкуйте за нами у Facebook - кілька разів на рік ми робимо акції, не пропустіть їх!"></strong>:
+</label>
+<span id="error_coupon" class="error" style="display:none;"><span>{error_coupon}</span></span>
+<span>
+<input type="text" name="accounts_coupon" autocomplete="off">
+<button>Використати</button>
+<strong data-discount=""></strong>
+</span>
+</p>
+<p>
+<span><strong class="price_total">не застосовується</strong></span>
+Повна ціна:
+</p>
+
+</div>
+</div>
+<div class="buttons">
+<input type="hidden" name="accounts_item" value="">
+<input type="hidden" name="accounts_confirm" value="81fb7d4d3b34a39585ea59889c64f8a2">
+<input type="submit" value="Додати в кошик">
+<a href="/panel/uk/accounts" class="button cancel_button">Скасувати</a>
+</div>
+</form>
+<form action="/panel/uk/accounts" method="post" id="dialog_give_account" class="dialog">
+<h3>Віддати акаунт: </h3>
+<p>
+Ви дійсно хочете віддати цей хостинговий акаунт й усі його елементи (домени, субдомени, бази даних та ін.)?
+</p>
+<div class="message message_warning" style="display:none;">
+Цей акаунт оплачено до <strong></strong>.
+</div>
+<p>
+<label>
+Назва акаунту отримувача:
+</label>
+<span>
+<input type="text" name="accounts_recipient">
+</span>
+</p>
+<p>
+<label>
+Поточний пароль:
+</label>
+<span>
+<input type="password" name="accounts_password" autocomplete="off">
+</span>
+</p>
+<div class="buttons">
+<input type="hidden" name="accounts_item" value="">
+<input type="hidden" name="accounts_action" value="give-account">
+<input type="hidden" name="accounts_confirm" value="29ea53c2434f2657acf514d8cea598a9">
+<input type="submit" value="Так">
+<a href="/panel/uk/accounts" class="button cancel_button">Скасувати</a>
+</div>
+</form>
+<form action="/panel/uk/accounts" method="post" id="dialog_delete_account" class="dialog">
+<h3>Видалити акаунт: </h3>
+<p>
+Ви дійсно хочете видалити цей хостинговий акаунт й усі його елементи (домени, субдомени, поштові акаунти, бази даних та ін.)?
+</p>
+<div id="account_services">
+</div>
+<div class="message message_warning" style="display:none;">
+Цей акаунт оплачено до <strong></strong>.
+</div>
+<p>
+Акаунти видаляються вночі.
+</p>
+<p>
+<label>
+Поточний пароль:
+</label>
+<span>
+<input type="password" name="accounts_password" autocomplete="off" autofocus>
+</span>
+</p>
+<div class="buttons">
+<input type="hidden" name="accounts_item" value="">
+<input type="hidden" name="accounts_confirm" value="21a46d00cd4810faeaea54766a0e7939">
+<input type="submit" value="Так">
+<a href="/panel/uk/accounts" class="button cancel_button">Скасувати</a>
+</div>
+</form>
+</div>
+<div class="content">
+<h2><a href="/panel/uk/accounts/action/add-account" class="action action_add" title="Додати" onclick="" data-priority="0">Додати</a>Акаунти</h2>
+<div class="list_table status_column" data-type="accounts"><table>
+<thead>
+<tr><th>Назва акаунту</th><th>Пакет послуг</th><th>закінчується</th><th>Статус</th><th>Дії</th></tr>
+</thead>
+<tbody><tr data-item="FREE1"><td data-th="Назва акаунту">FREE #1</td><td data-th="Пакет послуг"><span class="plan_free">Free</span></td><td data-th="закінчується">2023-10-11 12:15:45</td><td data-th="Статус"><span class="status status_active">Активний</span></td><td data-th="Дії"><a href="/panel/uk/accounts/item/FREE1/action/upgrade-account" class="action action_upgrade" title="Покращення" onclick="" data-priority="9">Покращення</a><a href="/panel/uk/accounts/item/FREE1/action/delete-account" class="action action_delete" title="Видалити" onclick="" data-priority="8">Видалити</a></td></tr></tbody>
+</table>
+</div></div>
+<div class="help"></div>
+<script type="text/javascript">
+$(function()
+{
+	$('input#plan_pro').prop('checked', true);
+	var activeDialog = '#dialog_add_account';
+	if(activeDialog == '#'){
+		activeDialog = '';
+	}
+	var maxHeightScroll, maxHeightScroll_2;
+
+	function showError(identifier, message)
+	{
+		$(activeDialog + ' #error_' + identifier + ' span').html(message);
+		$(activeDialog + ' #error_' + identifier).show();
+		$(activeDialog + ' #error_' + identifier).css('display', 'inline-block');
+	}
+
+	function hideError(identifier)
+	{
+		$(activeDialog + ' #error_' + identifier).hide();
+		$(activeDialog + ' #error_' + identifier + ' span').html('');
+	}
+	$(activeDialog + ' input[name="accounts_coupon"]').on('focusout', function()
+	{
+		if($(activeDialog + ' input[name="accounts_coupon"]').val().trim().length == 0)
+		{
+			$(activeDialog + ' input[name="accounts_coupon"]').removeClass('error');
+			hideError('coupon');
+		}
+	});
+
+	function selectPlan(plan)
+	{
+		if (plan !== 'free')
+		{
+			$(activeDialog + ' .payment').show();
+		}
+		else
+		{
+			$(activeDialog + ' .payment').hide();
+		}
+
+		if (plan == 'free')
+		{
+			$(activeDialog + ' select[name="accounts_buyplan"] > option').prop('selected', true);
+		}
+		else
+		{
+			if ($(activeDialog + ' select[name="accounts_buyplan"] option:selected').parent().data('group') !== plan)
+			{
+				setTimeout(function()
+				{
+					$(activeDialog + ' select[name="accounts_buyplan"] optgroup[data-group="' + plan + '"] option:nth-child(1)').prop('selected', true);
+					$(activeDialog + ' .hosting_period .slider').labeledslider('option', 'value', 1);
+					updatePriceOnPlanChange(
+						$(activeDialog + ' input[name="accounts_coupon"]')
+					);
+				}, 50);
+			}
+
+			var labels = [];
+
+			$(activeDialog + ' select[name="accounts_buyplan"] optgroup[data-group="' + plan + '"] option').each(function(index, value)
+			{
+				var option = $(value);
+				var avg = (parseFloat(option.data('price')) / parseFloat(option.data('duration')) - 0.004999999).toFixed(2);
+
+				labels.push('Тривалість:<strong> ' + option.data('duration') + '</strong><br>' +
+					'<strong>' + avg +
+					' грн</strong> на місяць<br>' +
+					'Ціна: <strong>' + parseFloat(option.data('price')).toFixed(2) +
+					' грн</strong>');
+			});
+
+			$(activeDialog + ' .hosting_period .slider').labeledslider('option', 'tickLabels', labels);
+		}
+
+		$(activeDialog + ' input[name="accounts_plan"][value="' + plan + '"]').prop('checked', true);
+		$(activeDialog + ' .hosting_period').css('display', ((plan == 'free') ? 'none' : 'block'));
+
+		$(activeDialog + ' .coupon strong').data('discount', '');
+		resetCoupon();
+
+		updateTotal();
+	}
+
+	function updateTotal()
+	{
+		var total = 0;
+
+		if ($(activeDialog + ' input[name="accounts_plan"][value="free"]').prop('checked'))
+		{
+			$(activeDialog + ' .price_hosting').html('безкоштовно');
+		}
+		else
+		{
+			var priceHosting = parseFloat($(activeDialog + ' select[name="accounts_buyplan"] option:selected').data('price'));
+
+			total += priceHosting;
+
+			$(activeDialog + ' .price_hosting').html(priceHosting.toFixed(2) + ' грн');
+		}
+
+		$(activeDialog + ' input[name="accounts_coupon"]').prop('disabled', (total == 0));
+
+		if (total > 0 && $(activeDialog + ' .coupon span strong').data('discount') !== '')
+		{
+			total -= parseFloat($(activeDialog + ' .coupon span strong').data('discount'));
+		}
+
+		$(activeDialog + ' .price_total').html((total > 0) ? total.toFixed(2) + ' грн' : 'не застосовується');
+	}
+
+	function checkCoupon()
+	{
+		var coupon = $(activeDialog + ' input[name="accounts_coupon"]').val().trim();
+
+		if (coupon.length < 5)
+		{
+			return;
+		}
+
+		hideError('coupon');
+		$(activeDialog + ' input[name="accounts_coupon"]').removeClass('error');
+		$(activeDialog + ' input[name="accounts_coupon"]').prop('type', 'hidden');
+		$(activeDialog + ' .coupon button').hide();
+		$(activeDialog + ' .coupon span strong').html('<span style="float:right;">Триває перевірка...</span>');
+		$(activeDialog + ' .coupon strong').data('discount', '');
+
+		var products = [];
+
+		if ((activeDialog == '#dialog_add_account' && !$(activeDialog + ' input[name="accounts_plan"][value="free"]').prop('checked')) || activeDialog == '#dialog_upgrade_account')
+		{
+			products.push({ serviceType: 'account', serviceName: ((activeDialog == '#dialog_add_account') ? $(activeDialog + ' input[name="accounts_domain"]').val() : $(activeDialog + ' input[name="accounts_item"]').val()), product: $(activeDialog + ' select[name="accounts_buyplan"] option:selected').val(), price: parseFloat($(activeDialog + ' select[name="accounts_buyplan"] option:selected').data('price')), amount: 1 });
+		}
+
+		if (activeDialog == '#dialog_add_account' && parseFloat($(activeDialog + ' .price_domain').data('price')) > 0)
+		{
+			products.push({ serviceType: 'domain', serviceName: $(activeDialog + ' input[name="accounts_domain"]').val(), product: '', price: parseFloat($(activeDialog + ' .price_domain').data('price')), amount: 1 });
+		}
+
+		$.post('/panel/api/', { 'check-coupon': coupon, products: products, locale: 'uk' }, function(data, textStatus, jqXHR)
+		{
+			data = JSON.parse(data);
+
+			if (data.status == 'success')
+			{
+				$(activeDialog + ' input[name="accounts_coupon"]').removeClass('error');
+				$(activeDialog + ' input[name="accounts_coupon"]').prop('type', 'hidden');
+				$(activeDialog + ' .coupon button').hide();
+				$(activeDialog + ' .coupon span strong').html('-' + parseFloat(data.discount).toFixed(2) + ' грн');
+				$(activeDialog + ' .coupon strong').data('discount', data.discount);
+			}
+			else
+			{
+				showError('coupon', data.message);
+				$(activeDialog + ' input[name="accounts_coupon"]').addClass('error');
+				$(activeDialog + ' input[name="accounts_coupon"]').prop('type', 'text');
+				$(activeDialog + ' .coupon button').show();
+				$(activeDialog + ' .coupon strong').html('');
+				$(activeDialog + ' .coupon strong').data('discount', 0);
+			}
+
+			updateTotal();
+		});
+	}
+
+	function displayServices(item, elem, data)
+	{
+		var html = "";
+		if(data['status'] == 'success')
+		{
+			html+="<div class='important'>";
+
+			if(data['domains'].length != 0)
+			{
+				domains = data['domains'];
+				html+="<div><h2>Домени:</h2><div class='account-services-scroll'>";
+				$.each(domains, function(index, value) {
+					html+="<span><b>"+index+"</b>";
+					if(value.length != 0)
+					{
+						$.each(value, function(subindex, subvalue) {
+							html+="<span>"+subvalue+"</span>";
+							html+="";
+						});
+					}
+					html+="</span>";
+				});
+				html+="</div></div>";
+			}
+			if(data['databases'].length != 0 || data['mails'].length != 0)
+			{
+				html+="<div>";
+			}
+			if(data['databases'].length != 0)
+			{
+				databases = data['databases'];
+				html+="<h2>Бази даних:</h2><div class='account-services-scroll-2 databases'>";
+				$.each(databases, function(index, value) {
+					html+="<span><b>"+value+"</b>";
+					html+="</span>";
+				});
+				html+="</div>";
+			}
+			if(data['mails'].length != 0)
+			{
+				mails = data['mails'];
+				html+="<h2>Електронні пошти:</h2><div class='account-services-scroll-2 mails'>";
+				$.each(mails, function(index, value) {
+					html+="<span><b>"+value+"</b>";
+					html+="</span>";
+				});
+				html+="</div>";
+			}
+			if(data['databases'].length != 0 || data['mails'].length != 0)
+			{
+				html+="</div>";
+			}
+
+			html+="</div>";
+
+			if ((data['domains'].length + data['databases'].length + data['mails'].length) === 0)
+			{
+				html = '';
+			}
+			$(elem).children("#account_services").html(html);
+
+			maxHeightScroll = window.innerHeight - 350;
+			maxHeightScroll_2 = (maxHeightScroll - 42) / 2;
+			$('.account-services-scroll').css('max-height', maxHeightScroll+'px');
+			$('.account-services-scroll-2').css('max-height', maxHeightScroll_2+'px');
+		}
+		else if (data['status'] == 'failed')
+		{
+			$(elem).addMessage('Помилка.', "error");
+		}
+	}
+
+	function createAddHostingRequest(dialog)
+	{
+		return {
+			locale: document.documentElement.lang,
+			service: 'hosting',
+			action: 'add',
+			data: {
+				domain: '',
+				plan: dialog.find('[name="accounts_plan"]:checked').val(),
+				buyplan: dialog.find('[name="accounts_buyplan"]').val(),
+				years: dialog.find('[name="accounts_years"]').val(),
+				coupon: dialog.find('[name="accounts_coupon"]').val(),
+				confirm: dialog.find('[name="accounts_confirm"]').val(),
+				domainmode: '',
+				authinfo: '',
+				resetdns: '',
+				isRegister: 'false'
+			}
+		};
+	}
+
+	function createUpgradeHostingRequest(dialog)
+	{
+		var pl = dialog.find('[name="accounts_plan"][value="pro"]').prop('checked') ? 'pro' : 'vip';
+
+		return {
+			locale:  document.documentElement.lang,
+			service: 'hosting',
+			action: 'upgrade',
+			data: {
+				plan: pl,
+				buyplan: dialog.find('[name="accounts_buyplan"]').val(),
+				coupon: dialog.find('[name="accounts_coupon"]').val(),
+				item: dialog.find('[name="accounts_item"]').val(),
+				confirm: dialog.find('[name="accounts_confirm"]').val(),
+			}
+		};
+	}
+
+	$('.coupon button').click(function(event)
+	{
+		event.stopPropagation();
+		event.preventDefault();
+		if ($(activeDialog + ' input[name="accounts_coupon"]').val().trim().length < 1){
+				return;
+			}
+		if ($(activeDialog + ' input[name="accounts_coupon"]').val().trim().length < 5)
+		{
+			$(activeDialog + ' input[name="accounts_coupon"]').addClass('error');
+			showError('coupon', 'Неправильний код купону.');
+		}
+		else
+		{
+			checkCoupon();
+		}
+	});
+
+	function showAddDialog()
+	{
+		activeDialog = '#dialog_add_account';
+
+		$(activeDialog + ' input[name="accounts_coupon"]').val('');
+		$(activeDialog + ' .coupon strong').data('discount', '');
+		$(activeDialog + ' input[name="accounts_coupon"]').prop('type', 'text');
+		$(activeDialog + ' .coupon button').show();
+		$(activeDialog + ' *').removeClass('error');
+		hideError('coupon');
+
+		if (true)
+		{
+			$(activeDialog + ' input[name="accounts_plan"][value="free"]').prop('disabled', true);
+			$('#span_plan_free').css('display', 'none');
+			$(activeDialog + ' input[name="accounts_plan"][value="pro"]').prop('checked', true);
+			var freeAccountButtonLabel = $('label[for="plan_free"]');
+			// add a tooltip:
+			freeAccountButtonLabel.prop('title',
+				'Неможливо додати безкоштовний акаунт, тому що ви або вже маєте його, або ви перейшли на платний пакет послуг.');
+			freeAccountButtonLabel.addClass('action_inactive');
+		}
+		else
+		{
+			$(activeDialog + ' input[name="accounts_plan"][value="free"]').prop('disabled', false);
+			$('#span_plan_free').css('display', 'inline-block');
+			$(activeDialog + ' input[name="accounts_plan"][value="free"]').prop('checked', true);
+		}
+
+		selectPlan($(activeDialog + ' input[name="accounts_plan"][value="vip"]').prop('checked') ? 'vip' : ($(activeDialog + ' input[name="accounts_plan"][value="pro"]').prop('checked') ? 'pro' : 'free'));
+
+		var dialog = $(activeDialog);
+		dialog.removeClass('dialog');
+		dialog.find('h3').hide();
+		dialog.find('.buttons').hide();
+		dialog.dialog(
+		{
+			modal: true,
+			closeOnEscape: true,
+			title: dialog.find('h3').html(),
+			closeText: '',
+			minWidth: 720,
+			minHeight: 100,
+			close: function(event, ui)
+			{
+				resetCoupon();
+				dialog.hideMessages(false);
+			},
+			open: function()
+			{
+				$(activeDialog + ' .coupon strong').html('');
+				selectPlan('pro');
+			},
+			buttons:
+			[
+				{
+					id: 'add-to-cart-button',
+					text: dialog.find('input[type="submit"]').prop('value'),
+					click: function(event)
+					{
+						$('#add-to-cart-button').button("disable");
+						event.preventDefault();
+						selectedPlan = $(activeDialog + ' input[name="accounts_plan"]:checked').val();
+
+						$.post('/panel/api/', createAddHostingRequest(dialog),
+						function(response, textStatus, jqXHR)
+						{
+							var data = parseResponse(response);
+
+							if (data.redirected) return;
+
+							else if (data.status !== 'error')
+							{
+								$('#messages').append('<div class="message message_'
+									+ data.status + '">' + data.message + '</div>');
+								if (selectedPlan.toUpperCase() === 'FREE')
+								{
+									var hostingNumber = 2;
+									var planTitle =
+										selectedPlan.toUpperCase() + ' #' + hostingNumber;
+									var dataItem = selectedPlan.toUpperCase() + hostingNumber;
+
+									addItem('accounts', dataItem, [ planTitle, ($(activeDialog + ' input[name="accounts_plan"][value="vip"]').prop('checked') ? 'VIP' : ($(activeDialog + ' input[name="accounts_plan"][value="pro"]').prop('checked') ? 'Pro' : 'Free')), '-', '<span class="status status_loading">Буде додано</span>' ], [ { text: 'Покращення', action: 'upgrade' }, { text: 'Видалити', action: 'delete' } ]);
+									checkStatus('/panel/uk/accounts', { 'accounts_action': 'check-account', 'accounts_item': planTitle }, 'accounts', dataItem);
+								}
+								dialog.hideMessages(false);
+								dialog.dialog('close');
+								updateCartInfo();
+							}
+							else
+							{
+								$('#add-to-cart-button').button("enable");
+								dialog.addMessage(data.message, data.status);
+							}
+						}).fail(function()
+						{
+							$('#add-to-cart-button').button("enable");
+							alert('No response from server.');
+						});
+
+						$(activeDialog + ' .price_hosting').html('безкоштовно');
+						$(activeDialog + ' .price_total').html('не застосовується');
+					}
+				},
+				{
+					text: dialog.find('a.cancel_button').html(),
+					click: function()
+					{
+						dialog.dialog('close');
+
+						$(activeDialog + ' .price_hosting').html('безкоштовно');
+						$(activeDialog + ' .price_total').html('не застосовується');
+					}
+				}
+			]
+		});
+
+	}
+
+	function showUpgradeDialog(item, defaultPlan, renewOrUpgrade)
+	{
+		var column = getColumn('accounts', item, 2);
+		var expires = Date.parse(getColumn('accounts', item, 3));
+		var now = Date.now();
+		var proDisabled = (column == '<span class="plan_vip">VIP</span>');
+		var isFreeAccount = (column == '<span class="plan_free">Free</span>');
+
+		if ('renew' == renewOrUpgrade)
+		{
+			$('#dialog_upgrade_account h3').html('Продовжити акаунт: ' + item);
+		}
+		else
+		{
+			$('#dialog_upgrade_account h3').html('Покращити акаунт: ' + item);
+		}
+		$('#dialog_upgrade_account input[name="accounts_plan"][value="pro"]').prop('disabled', proDisabled);
+		$('#span_plan_pro_upgrade').css('display', proDisabled ? 'none' : 'inline-block');
+		$('#dialog_upgrade_account input[name="accounts_item"]').val(item);
+
+		activeDialog = '#dialog_upgrade_account';
+
+		$('#dialog_upgrade_account input[name="accounts_coupon"]').val('');
+
+		if (!isFreeAccount && (proDisabled || ('upgrade' == renewOrUpgrade)))
+		{
+			selectPlan('vip');
+		}
+		else
+		{
+			selectPlan('pro');
+		}
+
+		var dialog = $('#dialog_upgrade_account');
+		dialog.removeClass('dialog');
+		dialog.find('h3').hide();
+		dialog.find('.buttons').hide();
+		dialog.dialog(
+		{
+			modal: true,
+			title: dialog.find('h3').html(),
+			closeText: '',
+			minWidth: 720,
+			minHeight: 100,
+			closeOnEscape: true,
+			close: function(event, ui)
+			{
+				resetCoupon();
+				dialog.hideMessages(false);
+			},
+			buttons:
+			[
+				{
+					id: 'add-to-cart-button',
+					text: dialog.find('input[type="submit"]').prop('value'),
+					click: function()
+					{
+						$('#add-to-cart-button').button("disable");
+						$.post('/panel/api/', createUpgradeHostingRequest($(this)),
+						function(response, textStatus, jqXHR)
+						{
+							data = parseResponse(response);
+
+							if (data.redirected) return;
+
+							if (data.status === 'error')
+							{
+								dialog.hideMessages(false);
+								dialog.addMessage(data.message, data.status);
+								$('#add-to-cart-button').button("enable");
+								return;
+							}
+
+							$('#messages').append(
+								'<div class="message message_'
+								+ data.status
+								+ '">'
+								+ data.message
+								+ '</div>'
+							);
+							updateColumn('accounts', item, 4, '<span class="status status_notpaid">Не оплачено</span>');
+							checkStatus('/panel/uk/accounts', { 'accounts_action': 'check-account', 'accounts_item': item }, 'accounts', item);
+							dialog.dialog('close');
+							updateCartInfo();
+						}
+						).fail(function()
+						{
+							dialog.dialog('close');
+							$('#add-to-cart-button').button("enable");
+							alert('No response from server.');
+						});
+
+						$('#dialog_upgrade_account .price_hosting').html('безкоштовно');
+						$('#dialog_upgrade_account .price_total').html('не застосовується');
+					}
+				},
+				{
+					text: dialog.find('a.cancel_button').html(),
+					click: function()
+					{
+						$(this).dialog('close');
+
+						$('#dialog_upgrade_account .price_hosting').html('безкоштовно');
+						$('#dialog_upgrade_account .price_total').html('не застосовується');
+					}
+				}
+			]
+		});
+	}
+
+	function resetCoupon()
+	{
+		var couponInput = $('input[name="accounts_coupon"]');
+		couponInput.prop('type', 'text');
+		couponInput.removeClass('error');
+		hideError('coupon');
+		$('.coupon button').show();
+		$('.coupon [data-discount]').text('');
+	}
+
+	function updatePriceOnPlanChange(couponInput)
+	{
+		if (couponInput.prop('type') === 'hidden')
+		{
+			checkCoupon();
+		}
+		else
+		{
+			resetCoupon();
+			updateTotal();
+		}
+	}
+
+	$('h2 > .action_add').click(function(event)
+	{
+		if (!$(this).hasClass('action_inactive'))
+		{
+			if (false)
+			{
+				$('#upgrading-free-message').hide();
+				showUpgradeDialog('');
+			}
+			else if (false)
+			{
+				$('#upgrading-free-message').hide();
+				showUpgradeDialog('');
+			}
+			else if (true)
+			{
+				$('#upgrading-free-message').show();
+				showUpgradeDialog('FREE1', 'pro');
+			}
+			else
+			{
+				showAddDialog();
+			}
+		}
+
+		event.preventDefault();
+
+		return false;
+	});
+
+	$('div[data-type="accounts"] table').on('click', '.action_refresh', function(event)
+	{
+		if (!$(this).hasClass('action_inactive'))
+		{
+			$('#upgrading-free-message').hide();
+			showUpgradeDialog(getItem(this), undefined, 'renew');
+		}
+
+		event.preventDefault();
+
+		return false;
+	});
+
+	$('div[data-type="accounts"] table').on('click', '.action_upgrade', function(event)
+	{
+		if (!$(this).hasClass('action_inactive'))
+		{
+			$('#upgrading-free-message').hide();
+			showUpgradeDialog(getItem(this), undefined, 'upgrade');
+		}
+
+		event.preventDefault();
+
+		return false;
+	});
+
+	$('div[data-type="accounts"] table').on('click', '.action_give', function(event)
+	{
+		if (!$(this).hasClass('action_inactive'))
+		{
+			var item = getItem(this);
+
+			$('#dialog_give_account h3').html('Віддати акаунт: ' + item);
+			$('#dialog_give_account input[name="accounts_item"]').val(item);
+			$('#dialog_give_account input[name="accounts_recipient"]').val('');
+			$('#dialog_give_account input[name="accounts_password"]').val('');
+
+			if (getColumn('accounts', item, 2).match(/\d\d\d\d\-\d\d\-\d\d/))
+			{
+				$('#dialog_give_account .message_warning strong').html(getColumn('accounts', item, 2).match(/\d\d\d\d\-\d\d\-\d\d/)[0]);
+				$('#dialog_give_account .message_warning').show();
+			}
+			else
+			{
+				$('#dialog_give_account .message_warning').hide();
+			}
+
+			$('#dialog_give_account input[name="accounts_recipient"]').keyup(function()
+			{
+				if ($('#dialog_give_account input[name="accounts_recipient"]').val().trim() !== '')
+				{
+					$('#dialog_give_account input[name="accounts_recipient"]').removeClass('error');
+				}
+			});
+
+			$('#dialog_give_account input[name="accounts_password"]').keyup(function()
+			{
+				if ($('#dialog_give_account input[name="accounts_password"]').val() !== '')
+				{
+					$('#dialog_give_account input[name="accounts_password"]').removeClass('error');
+				}
+			});
+
+			openDialog('#dialog_give_account');
+		}
+
+		event.preventDefault();
+
+		return false;
+	});
+
+	$('div[data-type="accounts"] table').on('click', '.action_delete', function(event)
+	{
+		if (!$(this).hasClass('action_inactive'))
+		{
+			var data = [];
+			var item = getItem(this);
+			$.get("/panel/"+webpage['language']+"/accounts/item/"+item+"/action/get-services/", function(result) {
+			  	data = JSON.parse(result);
+
+				displayServices(item, "#dialog_delete_account", data);
+				$('#dialog_delete_account h3').html('Видалити акаунт: ' + item);
+				$('#dialog_delete_account input[name="accounts_item"]').val(item);
+				$('#dialog_delete_account input[name="accounts_password"]').val('');
+
+				if (getColumn('accounts', item, 2).match(/\d\d\d\d\-\d\d\-\d\d/))
+				{
+					$('#dialog_delete_account .message_warning strong').html(getColumn('accounts', item, 2).match(/\d\d\d\d\-\d\d\-\d\d/)[0]);
+					$('#dialog_delete_account .message_warning').show();
+				}
+				else
+				{
+					$('#dialog_delete_account .message_warning').hide();
+				}
+
+				openDialog('#dialog_delete_account');
+				if($('.account-services-scroll-2.databases').height() == null || $('.account-services-scroll-2.databases').height() == 0)
+				{
+					$('.account-services-scroll-2.mails').css('max-height', maxHeightScroll+'px');
+				}
+				else if($('.account-services-scroll-2.mails').height() == null || $('.account-services-scroll-2.mails').height() == 0)
+				{
+					$('.account-services-scroll-2.databases').css('max-height', maxHeightScroll+'px');
+				}
+				else if($('.account-services-scroll-2.databases').height() < maxHeightScroll_2)
+				{
+					var maxHeightScrollMails = maxHeightScroll_2 + (maxHeightScroll_2 - $('.account-services-scroll-2.databases').height())
+					$('.account-services-scroll-2.mails').css('max-height', maxHeightScrollMails+'px');
+				}
+			});
+		}
+
+		event.preventDefault();
+
+		return false;
+	});
+
+	$('input[name="accounts_plan"]').change(function()
+	{
+		selectPlan($(activeDialog + ' input[name="accounts_plan"][value="vip"]').prop('checked')
+			? 'vip' :
+			($(activeDialog + ' input[name="accounts_plan"][value="pro"]').prop('checked') ? 'pro' :
+			'free'));
+	});
+
+	$('div[data-type="accounts"] table').on('click', '.action_cancel', function(event)
+	{
+		if (!$(this).hasClass('action_inactive'))
+		{
+			var item = getItem(this);
+
+			request = {
+				locale: document.documentElement.lang,
+				service: 'hosting',
+				action: 'cancel-delete',
+				data: {
+					item: item,
+					confirm: 'bb9a0fcaff0bb8aee1b7482a2ef7cb00'
+				}
+			}
+			$.post('/panel/api/', request, function(response, textStatus, jqXHR)
+			{
+				data = JSON.parse(response);
+
+				$('#messages').append('<div class="message message_' + data.status + '">' + data.message + '</div>');
+
+				if (data.status == 'success')
+				{
+					updateColumn('accounts', item, 4, '<span class="status status_active">Активний</span>');
+					checkStatus('/panel/uk/accounts', { 'accounts_action': 'check-account', 'accounts_item': item }, 'accounts', item);
+				}
+			}).fail(function()
+			{
+				alert('No response from server.');
+			});
+		}
+
+		event.preventDefault();
+
+		return false;
+	});
+
+	function getPlanName()
+	{
+		if ($(activeDialog + ' input[name="accounts_plan"][value="vip"]').prop('checked')) return 'vip';
+		if ($(activeDialog + ' input[name="accounts_plan"][value="pro"]').prop('checked')) return 'pro';
+		return 'free';
+	}
+
+	$('.hosting_period .slider').labeledslider({
+		min: 0,
+		max: 3,
+		tickInterval: 1,
+		change: function(event, ui)
+		{
+			$(activeDialog + ' select[name="accounts_buyplan"] optgroup[data-group="'
+				+ getPlanName() + '"] option:nth-child(' + (ui.value + 1) + ')').prop('selected', true);
+			updatePriceOnPlanChange(
+				$(activeDialog + ' input[name="accounts_coupon"]')
+			);
+		}
+	});
+
+	$('.hosting_period .ui-slider-labels').on('click', 'span', function(event)
+	{
+		$(activeDialog + ' .hosting_period .slider').labeledslider('option', 'value', $(this).data('value'));
+	});
+
+	function createDialogs()
+	{
+		createDialog($('#dialog_delete_account'), function()
+		{
+			var item = getCurrentItem();
+			$('#dialog_delete_account input[name="accounts_password"]').val('');
+
+			disableItem('accounts', item);
+			updateColumn('accounts', item, 4, '<span class="status status_todelete">Буде видалено</span>');
+			checkStatus('/panel/uk/accounts', { 'accounts_action': 'check-account', 'accounts_item': item }, 'accounts', item);
+
+			$('div[data-type="accounts"] tr[data-item="' + item + '"]').removeClass('item_deleted');
+		},function(){}, function()
+		{
+			var success = true;
+			if ($('#dialog_delete_account input[name="accounts_password"]').val() == '')
+			{
+				$('#dialog_delete_account input[name="accounts_password"]').addClass('error');
+				$('#dialog_delete_account').addMessage('Неправильний пароль.');
+				success = false;
+			}
+			return success;
+		},
+		false, // autoOpen
+		function(dialog)
+		{
+			return {
+				locale: document.documentElement.lang,
+				service: 'hosting',
+				action: 'delete',
+				data: {
+					item: dialog.find('[name="accounts_item"]').val(),
+					password: dialog.find('[name="accounts_password"]').val(),
+					confirm: dialog.find('[name="accounts_confirm"]').val()
+				}
+			};
+		});
+
+		createDialog($('#dialog_give_account'), function()
+		{
+			var item = getCurrentItem();
+			$('#dialog_give_account input[name="accounts_password"]').val('');
+
+			disableItem('accounts', item);
+			updateColumn('accounts', item, 4, '<span class="status status_loading">Буде надано</span>');
+			checkStatus('/panel/uk/accounts', { 'accounts_action': 'check-account', 'accounts_item': item }, 'accounts', item);
+		}, function() {}, function()
+		{
+			var success = true;
+
+			if ($('#dialog_give_account input[name="accounts_recipient"]').val().trim() == '')
+			{
+				$('#dialog_give_account input[name="accounts_recipient"]').addClass('error');
+
+				success = false;
+			}
+
+			if ($('#dialog_give_account input[name="accounts_password"]').val() == '')
+			{
+				$('#dialog_give_account input[name="accounts_password"]').addClass('error');
+
+				success = false;
+			}
+
+			return success;
+		});
+	}
+
+	$('select[name="accounts_buyplan"]').hide().parent().parent().hide();
+	$('.hosting_period').hide();
+	$('.coupon button').show();
+	$('.payment').hide();
+	createDialogs();
+	
+	$('h2 > .action_add').click(); 
+
+	$(window).resize(function()
+	{
+		if (!isMobile && $(activeDialog).dialog('isOpen'))
+		{
+			if($(activeDialog).height() + 100 < $(window).height())
+			{
+				$(activeDialog).dialog({position: {my: "center", at: "center", of: window }});
+			}
+			else
+			{
+				$(activeDialog).dialog({position: {my: "center top", at: "center top", of: window }});
+			}
+		}
+	});
+
+	$(window).keyup(function(e)
+	{
+		if (e.which == 27)
+		{
+			$(activeDialog).dialog("option", "position", {my: "center", at: "center", of: window});
+			$(activeDialog).dialog('close');
+			activeDialog = '';
+		}
+	});
+});
+</script>
+			</div>
+			<div class='clear'></div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<div>
+				Будьте у курсі подій, приєднуйтесь до нас у:
+				<div class="social">
+					<span itemscope itemtype="http://schema.org/Organization"><link itemprop="url" href="https://www.zzz.com.ua" /><a itemprop="sameAs" rel="me noopener noreferrer" href="https://www.facebook.com/zzz.com.ua" target="_blank"><span class="icon_facebook"></span></a><a itemprop="sameAs" rel="me noopener noreferrer" href="https://www.google.com/+ZzzUaHosting" target="_blank"><span class="icon_google"></span></a><a itemprop="sameAs" rel="me noopener noreferrer" href="https://instagram.com/zzz.com.ua/" target="_blank"><span class="icon_instagram"></span></a><a itemprop="sameAs" rel="me noopener noreferrer" href="https://ua.linkedin.com/in/zzzhosting" target="_blank"><span class="icon_linkedin"></span></a><a itemprop="sameAs" rel="me noopener noreferrer" href="https://www.pinterest.com/zzz_webhosting/" target="_blank"><span class="icon_pinterest"></span></a><a itemprop="sameAs" rel="me noopener noreferrer" href="https://twitter.com/zzz_web_hosting" target="_blank"><span class="icon_twitter"></span></a></span>
+				</div>
+				<span class="mailto-span">
+					<span>
+						<a id="supportemail" href="javascript:window.location.href=atob('bWFpbHRvOnN1cHBvcnRAenp6LmNvbS51YQ==')">support</a>
+					</span>
+				</span>
+			</div>
+			<div class="links">
+				<div>
+					<div>
+						<h6>
+							Наші послуги
+						</h6>
+						<p>
+							<a href="/uk/propozytsiya/hosting">
+								Хостинг
+							</a>
+						</p>
+						<p>
+							<a href="/uk/propozytsiya/domeny">
+								Домени
+							</a>
+						</p>
+						<p>
+							<a href="/uk/propozytsiya/vps">
+								Сервери VPS
+							</a>
+						</p>
+						<p>
+							<a href="/uk/propozytsiya/vydilenij-server">
+								Виділені сервери
+							</a>
+						</p>
+						<p>
+							<a href="/uk/propozytsiya/websayty">
+								Веб-сайти
+							</a>
+						</p>
+					</div>
+					<div>
+						<h6>
+							Важливі посилання
+						</h6>
+						<p>
+							<a href="/uk/help">
+								Допомога
+							</a>
+						</p>
+						<p>
+							<a href="/forum">
+								Форум
+							</a>
+						</p>
+						<p>
+							<a href="/uk/pravyla" rel="nofollow">
+								Правила
+							</a>
+						</p>
+						<p>
+							<a href="/uk/privacy-policy" rel="nofollow">
+								Політика конфіденційності
+							</a>
+						</p>
+						
+						<p>
+							<a href="/uk/vakansii">
+								Вакансії
+							</a>
+						</p>
+						
+						
+					</div>
+					<div>
+						<h6>
+							Організація
+						</h6>
+						<p class="contact_link">
+							<a href="/uk/firma">
+								Про нас
+							</a>
+						</p>
+						<p class="contact_link">
+							<a href="/uk/kontakt" onClick="gotoContact($(this)); return false;">
+								Контакт
+							</a>
+						</p>
+					</div>
+					<div>
+						<h6>
+							Розсилка новин
+						</h6>
+						<p>
+							Будьте у курсі подій
+						</p>
+						<p>
+							Не пропустіть наших ексклюзивних пропозицій
+						</p>
+						<form action="/panel/uk/newsletter" method="post">
+							<p><input type="email" name="newsletter_email" placeholder="Ваша адреса електронної пошти"></p>
+							<p><input type="submit" value="Підписатися"></p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="copyright">
+				Copyright © 2005 - 2023 ABC Hosting Ltd dba ZZZ.com.ua, All Rights Reserved<br>
+				<span>
+					This site is protected by reCAPTCHA and the Google
+					<a href="https://policies.google.com/privacy">Privacy Policy</a> and
+					<a href="https://policies.google.com/terms">Terms of Service</a> apply.
+				</span><br>
+				<span>
+					<img style="height:20px" src="/img/avast-software-smaller-white.png" alt="avast">
+					Хостинг захищено програмним забезпеченням Avast
+				</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span>
+					<a class="icon_cookies"></a>
+					Цей веб-сайт використовує файли cookies.
+				</span>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span>
+					<a href="https://www.mintme.com/">Створити коїн, створити токен</a>
+				</span>
+
+				<br>
+					<a href="?" id="versionChangeButton">
+					Перейти до мобільної версії
+					</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>
